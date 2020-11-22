@@ -37058,6 +37058,7 @@ GameObject:
   - component: {fileID: 1983132596}
   - component: {fileID: 1983132595}
   - component: {fileID: 1983132600}
+  - component: {fileID: 1983132601}
   m_Layer: 11
   m_Name: scan
   m_TagString: Untagged
@@ -37182,6 +37183,20 @@ MonoBehaviour:
   animator: {fileID: 1983132595}
   icons: {fileID: 1352001344}
   completed: 0
+--- !u!136 &1983132601
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983132594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 23.337023
+  m_Height: 87.16216
+  m_Direction: 1
+  m_Center: {x: -829.777, y: 55.13397, z: -634.5451}
 --- !u!1 &1984086030
 GameObject:
   m_ObjectHideFlags: 0
