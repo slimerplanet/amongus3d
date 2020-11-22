@@ -30,7 +30,11 @@ public class medbay_scan : MonoBehaviour
     private void Update()
     {
         if(inTrigger && Input.GetKeyDown(KeyCode.E)) {
-
+            animator.SetBool("scanning", true);
+        }
+        if(!inTrigger)
+        {
+            animator.SetBool("scanning", false);
         }
     }
 }
