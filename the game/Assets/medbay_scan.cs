@@ -7,6 +7,7 @@ public class medbay_scan : MonoBehaviour
     public Animator animator;
     public Icons icons;
     bool inTrigger;
+    public bool completed;
 
     private void OnTriggerEnter(Collider other)
     {
