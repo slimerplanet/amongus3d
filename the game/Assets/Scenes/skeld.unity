@@ -19204,7 +19204,7 @@ GameObject:
   - component: {fileID: 1097797171}
   - component: {fileID: 1097797170}
   m_Layer: 11
-  m_Name: Mesh417_Group172_AmongUs___Mapa_Final1_Model
+  m_Name: scanning thing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
