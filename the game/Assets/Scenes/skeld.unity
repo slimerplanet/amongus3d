@@ -1053,7 +1053,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &90270241
 GameObject:
@@ -7132,7 +7132,7 @@ Transform:
   - {fileID: 223406754}
   - {fileID: 343104301}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &369457865
 GameObject:
@@ -10369,7 +10369,7 @@ Transform:
   m_Children:
   - {fileID: 1326855761}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &505545503
 Mesh:
@@ -11494,7 +11494,7 @@ Transform:
   m_Children:
   - {fileID: 1110996934}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555696347
 GameObject:
@@ -12393,8 +12393,8 @@ GameObject:
   m_Component:
   - component: {fileID: 597827692}
   - component: {fileID: 597827691}
-  - component: {fileID: 597827690}
   - component: {fileID: 597827689}
+  - component: {fileID: 597827690}
   m_Layer: 0
   m_Name: networkManager
   m_TagString: Untagged
@@ -12426,7 +12426,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 597827688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b0fecffa3f624585964b0d0eb21b18e, type: 3}
+  m_Script: {fileID: 11500000, guid: c7424c1070fad4ba2a7a96b02fbeb4bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OnClientConnected:
@@ -12453,14 +12453,12 @@ MonoBehaviour:
   OnServerDisconnected:
     m_PersistentCalls:
       m_Calls: []
-  Port: 25565
+  port: 7777
   NoDelay: 1
-  Interval: 10
-  FastResend: 0
-  CongestionWindow: 1
-  SendWindowSize: 128
-  ReceiveWindowSize: 128
-  debugGUI: 0
+  serverMaxMessageSize: 16384
+  serverMaxReceivesPerTick: 10000
+  clientMaxMessageSize: 16384
+  clientMaxReceivesPerTick: 1000
 --- !u!114 &597827691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12480,7 +12478,7 @@ MonoBehaviour:
   serverTickRate: 30
   offlineScene: 
   onlineScene: 
-  transport: {fileID: 597827690}
+  transport: {fileID: 0}
   networkAddress: localhost
   maxConnections: 4
   disconnectInactiveConnections: 0
@@ -12503,7 +12501,7 @@ Transform:
   m_Children:
   - {fileID: 1770730997}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &599197389
 Mesh:
@@ -17766,7 +17764,7 @@ Transform:
   - {fileID: 1260306890}
   - {fileID: 1610145020}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &899757667
 GameObject:
@@ -20444,7 +20442,7 @@ Transform:
   - {fileID: 2043015575}
   - {fileID: 1206024626}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &999238761
 GameObject:
@@ -22948,7 +22946,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1198223546
 GameObject:
@@ -24411,7 +24409,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1250702272
 GameObject:
@@ -26959,7 +26957,7 @@ RectTransform:
   - {fileID: 21141572}
   - {fileID: 94250325}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -39180,7 +39178,7 @@ Transform:
   - {fileID: 757773063}
   - {fileID: 72621673}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1932241484
 GameObject:
@@ -41146,7 +41144,7 @@ Transform:
   - {fileID: 613905981}
   - {fileID: 1990705317}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2043015572
 GameObject:
