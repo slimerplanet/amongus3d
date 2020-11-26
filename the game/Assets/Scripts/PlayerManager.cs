@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerManager : NetworkBehaviour
 {
-    public bool isImpostor;
-    public bool isDead;
+    [SyncVar] public bool isImpostor;
+    [SyncVar] public bool isDead;
 
     public int color;
 

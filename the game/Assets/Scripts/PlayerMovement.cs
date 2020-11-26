@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : NetworkBehaviour
 {
     public CharacterController controller;
 
@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (manager.isIntask)
+        if (manager.isIntask || !isLocalPlayer)
             return;
 
         isGrounded = Physics.CheckSphere(groundCheck.position, GroundDistance, groundMask);
