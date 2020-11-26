@@ -29,7 +29,10 @@ public class PlayerMovement : NetworkBehaviour
 
     private void Update()
     {
-        if (manager.isIntask || !isLocalPlayer)
+        if (!isLocalPlayer)
+            return;
+
+        if (manager.isIntask)
             return;
 
         isGrounded = Physics.CheckSphere(groundCheck.position, GroundDistance, groundMask);

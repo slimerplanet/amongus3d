@@ -32,7 +32,7 @@ public class TaskManager : NetworkBehaviour
     public bool hasWires;
 
 
-
+    bool p = true;
     private void Start()
     {
         dataSpots[Random.Range(0, dataSpots.Length)].hasTaskHere = true;
@@ -47,8 +47,8 @@ public class TaskManager : NetworkBehaviour
         secondTask = Random.Range(0, wiresSpots.Length);
         thirdTask = Random.Range(0, wiresSpots.Length);
 
-        bool t = true ;
-        while(t)
+
+        while(p)
         {
             int u = 0;
             if (firstTask == secondTask || firstTask == thirdTask)
@@ -70,24 +70,15 @@ public class TaskManager : NetworkBehaviour
                 u++;
             if(u >= 3)
             {
-                t = false;
+                p = false;
             }
         }
 
         wiresSpots[firstTask].wirePart = 0;
         wiresSpots[secondTask].wirePart = 1;
         wiresSpots[thirdTask].wirePart = 2;
-
-
-
-
-
-
-
-
-
     }
-    bool t = true;
+    
     private void Update()
     {
         taskBar.maxValue = network.numPlayers * 3;
@@ -110,10 +101,10 @@ public class TaskManager : NetworkBehaviour
         {
             allWiresCompleted = true;
 
-            if(t)
+            if(p)
             {
                 taskscompleted++;
-                t = false;
+                p = false;
             }
         }
             
